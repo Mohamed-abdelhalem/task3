@@ -142,18 +142,20 @@ input:focus
         transform: translate(0, 10%);
         margin-bottom: 20px;
     }
-    .text-welcome,
-    .text-signup
+    .text-welcome
     {
         height: auto;
         text-align: center;
+    }
+    .text-signup
+    {
+        padding: 5px;
     }
     .text-welcome h1,
     .text-signup h1
     {
     font-size: 56px;
     font-weight: 400;
-    line-height: 1;
     }
     img
     {
