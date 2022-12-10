@@ -1,0 +1,180 @@
+/** global **/
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    background-color: bisque;
+}
+span
+{
+    margin-left: 10px;
+}
+/** end global **/
+.container
+{
+    
+    display: flex;
+    align-items: center;
+}
+.content-welcome,
+.content-signup,
+.content-login
+{
+    background-color: #ddd;
+    width: 80%;
+    height: 435px;
+    transform: translate(0, 40%);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+.content-signup,
+.content-login
+{
+    width: 90%;
+    height: 600px;
+    transform: translate(0, 15%);
+}
+.img-content-welcome img
+{
+    border-radius: 10px;
+}
+.text-welcome
+{
+    height:300px;
+    padding: 1rem;
+}
+.text-welcome h1,
+.text-signup h1
+{
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.text-welcome p,
+.text-signup p
+{
+    color: #1F1249;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 5;
+}
+.text-signup p,
+.text-signup h1
+{
+    line-height: 1.2;
+}
+button
+{
+    background-color: #2663DF;
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    font-size: 18px;
+}
+button a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+.text-signup
+{
+    height: 500px ;
+}
+.form-sign
+{
+    display: flex;
+    flex-direction: column;
+}
+input
+{
+width: 95%;
+height:50px;
+border: 0;
+border-radius: 10px;
+margin: 0px 0;
+padding: 0px 0px 0px 35px;
+background-color: white;
+}
+input:focus
+{
+    outline: none;
+}
+.input-field
+{
+    position: relative;
+    margin: 10px 0;
+}
+.input-field i
+{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 23px;
+    transition: all 0.5s ease;
+}
+.input-field i.icon{   left: 8px; color: #9CADF2; }
+
+
+/** media queries **/
+
+@media(max-width : 767px) {
+    .content-welcome,
+    .content-signup,
+    .content-login
+    {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 15px ;
+        transform: translate(0, 10%);
+    }
+    .text-welcome
+    {
+        height: auto;
+        text-align: center;
+    }
+}
+/*
+@media screen and (max-width :768px) {
+    .content-welcome,
+    .content-signup,
+    .content-login
+    {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+*/
+@media screen and (max-width :992px) {
+    .content-welcome,
+    .content-signup,
+    .content-login
+    {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 15px ;
+        transform: translate(0, 5%);
+    }
+    .content-signup,
+    .content-login,
+    .text-signup
+{
+    height: auto ;
+}
+}
+

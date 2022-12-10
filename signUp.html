@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style  -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="index.html" />
+    <title> Sign Up page </title>
+</head>
+<body>
+    <div class="container">
+        <div class="content content-signup">
+            <div class="img-content-signup">
+                <img src="imgs/Image Placeholder (2).png" alt=" sign up image ">
+            </div>
+            <div class="text-signup">
+                <h1>Create Account</h1>
+                <p>Go ahead and sign up, let everyone know how awesome you are!</p>
+                <form  class="form-sign" >
+                    <div>
+                        <div class="input-field ">
+                            <input 
+                                type="text" 
+                                placeholder="User Name" 
+                                id="username" 
+                                name="username"  
+                                maxlength="15"
+                                minlength="5" 
+                                onkeydown="validationUserName()"
+                                required>
+                            <i class="fas fa-user icon"></i>
+                        </div>
+                            <span id="text_user" >At least 5 characters without numbers at the end or at the beginning , eg : mohamed123mm </span>
+                    </div>
+                    <div>
+                        <div class="input-field ">
+                            <input type="text" 
+                                placeholder="Email" 
+                                id="email" 
+                                name="email" 
+                                onkeydown="validationEmail()" 
+                                required>
+                            <i class="fas fa-envelope icon"></i>
+                        </div>
+                            <span id="text_email" > Must in a valid format , eg : mohamed123@yahoo.com </span>
+                    </div>
+                    <div>
+                        <div class="input-field ">
+                            <input 
+                                type="password" 
+                                placeholder="Password"
+                                class="psd"  
+                                name="password" 
+                                onkeydown="validationPassword()"
+                                id="pwd" 
+                                required>
+                            <i class="fas fa-lock icon"></i>
+                        </div>
+                            <span id="text_password" >Must contain at least 1 Uppercase letter,8 characters,symbols and numbers , eg: mohamed@M123 </span>
+                    </div>
+                    <div class="input-field ">
+                        <input 
+                            type="password" 
+                            class="psd" 
+                            placeholder="Confirm Password" 
+                            name="password_confirmation" 
+                            required>
+                        <i class="fas fa-lock icon"></i>
+                    </div>
+                        <button type="submit" > Get Started  </button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    <!-- JS file  -->
+    <script src="js/main.js"></script>
+</body>
+</html>
