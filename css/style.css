@@ -145,6 +145,17 @@ input:focus
         height: auto;
         text-align: center;
     }
+    .text-welcome h1,
+    .text-signup h1
+    {
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 1;
+    }
+    img
+    {
+        width: 100%;
+    }
 }
 /*
 @media screen and (max-width :768px) {
