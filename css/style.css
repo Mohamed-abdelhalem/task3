@@ -96,13 +96,13 @@ button a
 }
 input
 {
-width: 95%;
-height:50px;
-border: 0;
-border-radius: 10px;
-margin: 0px 0;
-padding: 0px 0px 0px 35px;
-background-color: white;
+    width: 95%;
+    height:50px;
+    border: 0;
+    border-radius: 10px;
+    margin: 0px 0;
+    padding: 0px 0px 0px 35px;
+    background-color: white;
 }
 input:focus
 {
@@ -126,7 +126,8 @@ input:focus
 
 /** media queries **/
 
-@media(max-width : 767px) {
+@media(max-width : 767px) 
+{
     .content-welcome,
     .content-signup,
     .content-login
@@ -139,8 +140,10 @@ input:focus
         height: auto;
         padding: 15px ;
         transform: translate(0, 10%);
+        margin-bottom: 20px;
     }
-    .text-welcome
+    .text-welcome,
+    .text-signup
     {
         height: auto;
         text-align: center;
@@ -157,19 +160,9 @@ input:focus
         width: 100%;
     }
 }
-/*
-@media screen and (max-width :768px) {
-    .content-welcome,
-    .content-signup,
-    .content-login
-    {
-        width: 85%;
-        display: flex;
-        flex-direction: column;
-    }
-}
-*/
-@media screen and (max-width :992px) {
+
+@media screen and (max-width :992px) 
+{
     .content-welcome,
     .content-signup,
     .content-login
@@ -184,8 +177,8 @@ input:focus
     .content-signup,
     .content-login,
     .text-signup
-{
-    height: auto ;
-}
+    {
+        height: auto ;
+    }
 }
 
