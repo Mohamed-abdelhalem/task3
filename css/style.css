@@ -147,10 +147,6 @@ input:focus
         height: auto;
         text-align: center;
     }
-    .text-signup
-    {
-        padding: 5px;
-    }
     .text-welcome h1,
     .text-signup h1
     {
@@ -160,6 +156,10 @@ input:focus
     img
     {
         width: 100%;
+    }
+    .form-sign
+    {
+        padding: 5px;
     }
 }
 
